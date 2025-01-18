@@ -1,38 +1,40 @@
-// Mobile menu toggle
-const menuOpenButton = document.querySelector("#menu-open-button");
-const menuCloseButton = document.querySelector("#menu-close-button");
+document.addEventListener("DOMContentLoaded", () => {
+  // Mobile menu toggle
+  const menuOpenButton = document.querySelector("#menu-open-button");
+  const menuCloseButton = document.querySelector("#menu-close-button");
 
-menuOpenButton.addEventListener("click", () => {
-  document.body.classList.toggle("show-mobile-menu");
-});
+  menuOpenButton.addEventListener("click", () => {
+    document.body.classList.toggle("show-mobile-menu");
+  });
 
-menuCloseButton.addEventListener("click", () => {
-  document.body.classList.remove("show-mobile-menu");
-});
+  menuCloseButton.addEventListener("click", () => {
+    document.body.classList.remove("show-mobile-menu");
+  });
 
-// Initialize Swiper
-const swiper = new Swiper('.slider-contact', {
-  loop: true,
-  grabCursor:true,
-  spaceBetween: 25,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1, // Corrected property name
+  // Initialize Swiper
+  const swiper = new Swiper('.slider-contact', {
+    loop: true,
+    grabCursor: true,
+    spaceBetween: 25,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      dynamicBullets: true,
     },
-    768: {
-      slidesPerView: 2, // Corrected property name
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    1024: {
-      slidesPerView: 3, // Corrected property name
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
     },
-  },
+  });
 });
