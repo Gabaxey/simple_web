@@ -117,7 +117,7 @@ header .navbar{
     background: var(--secondray-color);
 
 }
-.navbar :where(#menu-close-button, #menu-open-btton){
+.navbar :where(#menu-close-button, #menu-open-button) {
     display: none;
 }
 
@@ -156,6 +156,7 @@ header .navbar{
 .hero-section .hero-details .buttons{
     display: flex;
     gap: 23px;
+
 }
 .hero-section .hero-details .button{
    padding: 10px 26px;
@@ -443,7 +444,7 @@ header .navbar{
         background: rgba(0,0,0,0.2);
 
     }
-    .navbar :where(#menu-close-button, #menu-open-btton){
+    .navbar :where(#menu-close-button, #menu-open-button) {
         display: block;
         font-size: var(--font-size-l);
     }
