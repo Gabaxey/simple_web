@@ -485,7 +485,8 @@ header .navbar{
         flex-direction: column-reverse;
         justify-content: center;
     }
-    .hero-section .hero-details :is(.subtitle, .description), .about-section .about-datails, .contact-section .contact-form{
+    .hero-section .hero-details :is(.subtitle, .description),
+    .about-section .about-datails, .contact-section .contact-form{
         max-width: 100%;
     }
     .hero-section .hero-details .buttons{
